@@ -1,0 +1,86 @@
+.login_container {
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 460px;
+
+    .login_logo {
+        height: 100px;
+        background: {
+            image: url('../img/apple_logo.png');
+            repeat: no-repeat;
+            position: center;
+            size: auto 100%;
+        };
+    
+        margin-bottom: 20px;
+    }
+
+    .login_account {
+        font-size: 0.8em;
+        color: $opacityBlack;
+        text-align: center;
+
+        > a {
+            color: $gray1;
+        }
+    }
+}
+
+.login_form {
+    width: 240px;
+    margin: 0 auto 80px;
+    font-size: 0.8em;
+
+    input {
+        width: 240px;
+        height: 40px;
+        border: 1px solid $opacityBlack;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $gray2;
+    }
+
+    .login_form_id {
+        border-radius: 2px 2px 0 0;
+        border-bottom: none;
+        padding-left: 10px;
+    }
+    .login_form_pw {
+        border-radius: 0 0 2px 2px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding-left: 10px;
+        margin-bottom: 7px;
+    }
+    .login_form_btn {
+        background-color: $main-color;
+        margin-bottom: 7px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $main-color-hover;
+        }
+    }
+    .login_form_check {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        // appearance: unset; 기본 모양 설정 삭제
+        cursor: pointer;
+    }
+    label {
+        color: $gray1;
+    }
+}

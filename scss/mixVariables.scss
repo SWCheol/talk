@@ -1,0 +1,13 @@
+$bg-color: #aafa43;
+$main-color: #84c72d;
+$main-color-hover: #6fa32b;
+$gray1: #2f312b;
+$gray2: #7a7e72;
+$gray3: #b1b8a4;
+$opacityBlack: rgba(0, 0, 0, 0.2);
+
+@mixin set-box($height, $width: 100%, $border-radius: 0) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
